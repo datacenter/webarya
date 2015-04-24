@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 from wtforms import Form, TextAreaField
 import arya.arya
+from argparse import ArgumentParser
 
 app = Flask(__name__)
 
@@ -32,7 +33,7 @@ def post_action(string):
 
 
 @app.route('/', methods=['GET', 'POST'])
-def main():
+def index():
     """
     :return: rendered web page
     """
@@ -46,6 +47,14 @@ def main():
                                title='Success',
                                data=resp)
 
-if __name__ == '__main__':
+def main():
+    parser = ArgumentParser('Code generator for APIC cobra SDK')
+    parser.add_argument(
+        '-p', '--port', help='Port to listen on ', required=False, default=8888)
+    args = parser.parse_args()
     app.secret_key = '1234'
-    app.run(host='0.0.0.0', port=8888, debug=True)
+    port = int(args.port)
+    app.run(host='0.0.0.0', port=port, debug=True)
+
+if __name__ == '__main__':
+    main()
