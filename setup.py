@@ -3,6 +3,11 @@ setup(
   name = 'webarya',
   packages = ['webarya'],
   version = '0.1',
+  install_requires = [
+      "arya",
+      "flask",
+      "wtforms",
+       ],
   description = 'Flask front-end for Arya',
   author = 'Kevin Corbin',
   author_email = 'kecorbin@cisco.com',
