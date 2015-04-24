@@ -1,0 +1,21 @@
+{% extends "base_layout.html" %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+
+<html>
+<body>
+<h3>Generate Python Code based on XML/JSON</h3>
+
+<h4>Import XML or JSON code:</h4>
+<br>
+<form action="" method="POST" name="data">
+
+{{form.data(cols='120',rows='50')|safe}}
+
+<br><input type="submit" value="Submit" />
+</form><br></body></html>
+
+
+{% endblock %}

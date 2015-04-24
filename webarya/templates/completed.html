@@ -1,0 +1,18 @@
+{% extends "base_layout.html" %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% for n in data %}
+       {{n}}<br>
+        {% endfor %}
+</body>
+</html>
+
+{% endblock %}
