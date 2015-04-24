@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'webarya',
   packages = ['webarya'],
-  version = '1.0',
+  version = '0.0.3',
   install_requires = [
       'arya',
       'argparse',
