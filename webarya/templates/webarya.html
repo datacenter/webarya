@@ -6,20 +6,20 @@
 
 <html>
 <body>
-<div class="row-fluid">
-    <img src="/static/apic.jpg">
-    <h1>WebArya</h1>
+<div class="container">
+     <h1>WebArya</h1>
     <p class="lead">
         Convert XML/JSON to Python Code!
     </p>
 </div>
+
 <br>
 
 <div class="container">
   <div class="center-block">
      <form action="" method="POST" name="data">
-        {{form.data(cols='120',rows='50')|safe}}
-        <br><button type="button" class="btn btn-primary btn-xlg">Submit</button>
+        {{form.data(cols='120',rows='30')|safe}}
+        <br><button type="submit" class="btn btn-primary btn-lg">Submit</button>
      </form>
   </div>
 </div>
