@@ -1,4 +1,5 @@
 arya
 argparse
 flask
+flask-bootstrap
 wtforms

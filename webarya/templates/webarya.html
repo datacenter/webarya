@@ -6,16 +6,27 @@
 
 <html>
 <body>
-<h3>Generate Python Code based on XML/JSON</h3>
-
-<h4>Import XML or JSON code:</h4>
+<div class="row-fluid">
+    <img src="/static/apic.jpg">
+    <h1>WebArya</h1>
+    <p class="lead">
+        Convert XML/JSON to Python Code!
+    </p>
+</div>
 <br>
-<form action="" method="POST" name="data">
 
-{{form.data(cols='120',rows='50')|safe}}
+<div class="container">
+  <div class="center-block">
+     <form action="" method="POST" name="data">
+        {{form.data(cols='120',rows='50')|safe}}
+        <br><button type="button" class="btn btn-primary btn-xlg">Submit</button>
+     </form>
+  </div>
+</div>
 
-<br><input type="submit" value="Submit" />
-</form><br></body></html>
 
 
+
+</body>
+</html>
 {% endblock %}

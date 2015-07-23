@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 from flask import Flask, render_template, request
 from wtforms import Form, TextAreaField
+from flask.ext.bootstrap import Bootstrap
 import arya.arya
 from argparse import ArgumentParser
 
 app = Flask(__name__)
 
+bootstrap = Bootstrap(app)
 
 class DataForm(Form):
     """
