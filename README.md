@@ -1,5 +1,8 @@
 # webarya
 
+Webarya is a flask wrapper for the arya project
+
+
 ## Environment
 
 Required
