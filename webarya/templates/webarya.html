@@ -5,12 +5,11 @@
 {% block content %}
 
 <html>
-<body>
+<body bgcolor="#00FF00">
 <div class="container">
      <h1>WebArya</h1>
     <p class="lead">
         Convert XML/JSON from APIC to Python Code!
-        This is the beta version
     </p>
 </div>
 
@@ -25,13 +24,15 @@
   </div>
 </div>
 
+<br><br>
 
 Sample JSON code<br>
 
 {'fvTenant': {'attributes': {'name': 'testing'}, 'children': []}}
 
 
-
+<br><br><br>
+Currently served by {{ hostname }}
 </body>
 </html>
 {% endblock %}

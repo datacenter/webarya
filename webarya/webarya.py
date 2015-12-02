@@ -4,6 +4,7 @@ from wtforms import Form, TextAreaField
 from flask.ext.bootstrap import Bootstrap
 import arya.arya
 from argparse import ArgumentParser
+import socket
 
 app = Flask(__name__)
 
@@ -41,7 +42,8 @@ def index():
     """
     if request.method == 'GET':
         form = DataForm()
-        return render_template('webarya.html', title='WebArya', form=form)
+        sysname = socket.gethostname()
+        return render_template('webarya.html', title='WebArya', form=form, hostname=sysname)
     elif request.method == 'POST':
         resp = post_action(str(request.form['data']))
         resp = resp.rstrip().split('\n')
