@@ -1,4 +1,4 @@
-arya
+git+git://github.com/datacenter/arya@master
 argparse
 flask
 flask-bootstrap
